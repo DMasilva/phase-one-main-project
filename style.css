@@ -1,17 +1,18 @@
 body, html{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 body{
     background-image: url(./image/main.jpeg);
-    background-position: 100%;
+    background-size: 100%;
     height: 150vh;
 }
 
 .allimages{
     background-color: purple;
-    width: 500px;
-    height: 500px;
+    width: 250px;
+    height: 250px;
     margin: auto;
     background: url(./image/image1.avif);
     background-size: contain;
@@ -60,41 +61,67 @@ body{
 
 
 
+
 .button{
     background-color: transparent;
     color: white;
     padding: 16px;
     font-size: 16px;
     cursor: pointer;
-    border: 1px solid;
+    border: 2px solid white;
     width: 150px;
+    border-radius: 5%;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 
  .container{
-    width: 60%;
-    height: 35vh;
+    width: 63%;
+    height: 310px;
    /* margin: auto;
    position: relative;
    margin-top: -6.5%;
      */
-    background-color: green;
+    /* background-color: green; */
+    margin: auto;
+   position: relative;
+   bottom: -5%;
 }
 
-
-
-.container .info{
-  
-    position: relative;
-    background-color: yellow;
-    margin: 5px;
-    width: calc(1000px- 20px);
-    height: calc(1000px- 20px);
+.container .allimages{
+    margin: 15px;
     float: left;
+   
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.mealsss{
+    display: inline;
+    padding: 100px 100px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
 
 }
 
 
+#signUp{
+    width: 150px;
+    height: 50px;
+    border-radius: 5%;
+    background: transparent;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    
+}
 
 .right, .right_two, .right_three{
     /* position: relative;
@@ -111,17 +138,22 @@ body{
 .right, .right_two, .right_three{
     display: inline;
     padding: 5px;
-    margin: 5px;
+    margin: 15px 15px;
 }
 
 .menubar, .chef{
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: none;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,2);
     z-index: 1;
     overflow: auto;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 500px;
+    width: 400px;
+    border-radius: 5%;
 }
 
 
@@ -149,7 +181,8 @@ img{
     border-radius: 8px;
     filter: grayscale(1);
     transition: .3s linear;
-    height: 150px;
+    height: 250px;
+
     /* float: right; */
 }
 
@@ -158,6 +191,8 @@ img:hover{
 }
 
 .logo{
+    cursor: pointer;
+    margin-top: 0;
     text-transform: uppercase;
     background-image: linear-gradient(
         -225deg,
@@ -178,7 +213,7 @@ img:hover{
     -webkit-text-fill-color: transparent;
     animation: textclip 5s linear infinite;
     display: inline-block;
-    font-size: 40px;
+    font-size: 60px;
 }
 @keyframes textclip {
     to{
@@ -188,7 +223,7 @@ img:hover{
 
 
 .navbar{
-    background-color: red;
+    /* background-color: red; */
     height: 50vh;
  
 }
@@ -238,6 +273,7 @@ footer{
 }
 
 .popup.active{
+    z-index: 1;
     opacity: 1;
     top: 50%;
     left: 50%;
@@ -269,6 +305,30 @@ footer{
     margin: 10px 0px 20px;
 }
 
+.popup .form label{
+    display: block;
+    padding: 20px;
+}
+
+.popup .form .input{
+    display: block;
+    padding: 10px;
+    width: 250px;
+    color: black;
+    font-weight: bold;
+}
+
+.popup .form .submit{
+border-radius: 10%;
+font-weight: bold;
+font-size: 20px;
+background-color: red;
+width: 100px;
+text-align: center;
+height: 50px;
+
+}
+
 
 
 
@@ -284,21 +344,24 @@ footer{
 .main_info{
     width: calc(400px - 30px);
     height: calc(300px - 30px);
-    /* color: blue; */
+    color: rgb(16, 14, 14);
     margin: 15px;
     float: left;
-    background-color: blue;
+    /* background-color: blue; */
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
 .main{
     width: 1200px;
     height: 300px;
-    background-color: pink;
+    /* background-color: pink; */
     margin: auto;
     margin-top: 50px;
     margin-bottom: -50px;
@@ -310,7 +373,7 @@ footer{
     left: 0;
     width: 100%;
     height: 100%;
-    background: brown;
+    background: rgb(112, 205, 245);
     transition: 0.5s;
     z-index: 1;
 

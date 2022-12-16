@@ -1,24 +1,16 @@
-
 {
-    "students": [
-      {
-      
-        "id": "1",
-   
-        "name": "John Doe",
-   
-        
-        "year": 3.1,
-   
-        
-   
-        "description": "John Doe is a 3rd year student at TUK and he will be preparing today a sumptous meal",
-   
-        
-   
-        "image": "https://shorturl.at/uAIOR"
-   
-      }
-    ]
-   
+  "students": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "year": 3.1,
+      "description": "John Doe is a 3rd year student at TUK and he will be preparing today a sumptous meal",
+      "image": "https://shorturl.at/uAIOR"
+    }
+  ],
+  "signups": {
+    "name": "test",
+    "email": "david.owuor@student.moringaschool.com",
+    "des": "test"
+  }
 }
