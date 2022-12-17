@@ -13,7 +13,7 @@ fetch('https://db-json-file-production.up.railway.app/students')
 .then(res=>{
   return res.json()
 }).then(data=>{
-  console.log(data);
+  //console.log(data);
   displayImage(data[0])
 })
 
@@ -100,7 +100,16 @@ forms.addEventListener('submit', (e)=>{
   fetch('https://db-json-file-production.up.railway.app/signups',config).then(res=>{
     return res.json()
   }).then(data=>{
-    console.log(data);
+    //console.log(data);
+      const list = document.querySelector('#test')
+      const li = document.createElement('li')
+      li.textContent = data.name
+      list.appendChild(li)
+    
+
   }).catch(error=>console.log(error))
   
 })
+
+
+

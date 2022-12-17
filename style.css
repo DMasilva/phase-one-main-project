@@ -8,6 +8,7 @@ body{
     background-size: 100%;
     height: 150vh;
     background-color: black;
+    color: white;
 }
 
 .allimages{
@@ -261,6 +262,7 @@ footer{
 
 .popup{
     position: absolute;
+    
     opacity: 0;
     top: 50%;
     left: 50%;
@@ -278,12 +280,15 @@ footer{
 .popup.active{
     z-index: 1;
     opacity: 1;
+    border-color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: top 0ms ease-in-out 0ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 20ms ease-in-out 0ms;
+
+                
 }
 
 .popup .remove{
@@ -379,7 +384,7 @@ height: 50px;
     left: 0;
     width: 100%;
     height: 100%;
-    background:  #87eee9;
+    background:  rgb(199, 191, 191);
     transition: 0.5s;
     z-index: 1;
 cursor: pointer;
@@ -415,6 +420,7 @@ cursor: pointer;
     box-sizing: border-box;
     transition: 0.5s;
     opacity: 0;
+    color: white ;
     
 }
 
