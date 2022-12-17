@@ -27,7 +27,7 @@ body{
     
 }
 
-@keyframes slide{
+/* @keyframes slide{
     15%{
         background: url(./image/image2.avif);
         background-size: contain;
@@ -58,8 +58,21 @@ body{
 
 
 
-}
+} */
 
+
+#meals{
+    background: url(https://shorturl.at/hqSUX);
+    background-size: cover;
+}
+#dessert{
+    background: url(https://shorturl.at/aeV28);
+    background-size: 100%;
+}
+#drinks{
+    background: url(https://shorturl.at/fkyzR);
+    background-size: 100%;
+}
 
 
 
@@ -199,13 +212,13 @@ img:hover{
     text-transform: uppercase;
     background-image: linear-gradient(
         -225deg,
-        black 0%,
-        green 12%,
-        brown 25%,
-        black 45%,
-        red 67%,
-        yellow 80%,
-        white 100%);
+        red 0%,
+        orange 12%,
+        yellow 25%,
+        green 45%,
+        blue 67%,
+        indigo 80%,
+        violet 100%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -232,7 +245,18 @@ img:hover{
 }
 
 
-
+.customers{
+    width: 20%;
+    height: 40vh;
+    /* background: green; */
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -7%;
+    overflow: auto;
+    box-shadow: 2px 2px 5px 5px;
+    border-radius: 10px;
+    border-color: white;
+}
 
 
 footer{
