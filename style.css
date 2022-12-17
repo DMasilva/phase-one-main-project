@@ -297,7 +297,7 @@ footer{
     right: 10px;
     width: 15px;
     height: 15px;
-    background: red;
+    background: blue;
     color: black;
     text-align: center;
     line-height: 15px;
@@ -316,8 +316,9 @@ footer{
 .popup .form label{
     display: block;
     padding: 20px;
-    color: black;
+    color: blue;
     font-weight: solid;
+
 }
 
 .popup .form .input{
