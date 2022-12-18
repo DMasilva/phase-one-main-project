@@ -9,7 +9,7 @@ document.querySelector('.remove').addEventListener('click',()=>{
 })
 
 
-fetch('https://db-json-file-production.up.railway.app/students')
+fetch('https://main-db-production.up.railway.app/students')
 .then(res=>{
   return res.json()
 }).then(data=>{
@@ -97,7 +97,7 @@ forms.addEventListener('submit', (e)=>{
     body: JSON.stringify(obj)
   }
 
-  fetch('https://db-json-file-production.up.railway.app/signups',config).then(res=>{
+  fetch('https://main-db-production.up.railway.app/signups',config).then(res=>{
     return res.json()
   }).then(data=>{
     //console.log(data);
